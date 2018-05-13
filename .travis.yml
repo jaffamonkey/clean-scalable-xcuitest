@@ -1,0 +1,20 @@
+sudo: required
+os: osx
+language: node_js
+node_js: '6'
+osx_image: xcode9.3
+env: DEVICE=11.2      
+rvm: system
+
+before_script:
+  # - brew update
+  - brew cask install java
+  - export JAVA_HOME=$(/usr/libexec/java_home)
+  - brew prune
+  - brew install libimobiledevice
+  - brew install ideviceinstaller
+  - brew install ios-webkit-debug-proxy
+  - npm install -g ios-deploy
+  
+script:
+  
