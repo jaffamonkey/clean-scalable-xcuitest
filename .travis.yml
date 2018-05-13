@@ -18,7 +18,7 @@ before_script:
   
 script:
   xcodebuild 
-    -workspace project.xcworkspace 
+    -workspace FoodTracker.xcodeproj/project.xcworkspace 
     -scheme "FoodTrackerUITests" 
     -sdk iphonesimulator 
     -derivedDataPath './output'
