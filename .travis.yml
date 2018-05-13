@@ -17,8 +17,9 @@ before_script:
   - npm install -g ios-deploy
   
 script:
-  - xcodebuild -workspace App.xcworkspace \
-           -scheme "SchemeName" \
-           -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' \
-           -derivedDataPath './output' \
-           test
+xcodebuild 
+  -workspace FoodTracker.xcworkspace 
+  -scheme "FoodTrackerUITests" 
+  -sdk iphonesimulator 
+  -derivedDataPath './output' \
+  -destination 'platform=iOS Simulator,name=iPhone 7,OS=11.2' test
