@@ -18,8 +18,4 @@ before_script:
   
 script:
   xcodebuild
-    -workspace runiostests.xcworkspace \
-    -scheme "FoodTracker" \
-    -sdk iphonesimulator \
-    -derivedDataPath './output' \
-    -destination 'platform=iOS Simulator,name=iPhone 7,OS=11.2' test \
+    -workspace runiostests.xcworkspace -scheme "FoodTracker" -sdk iphonesimulator -derivedDataPath './output' -destination 'platform=iOS Simulator,name=iPhone 7,OS=11.2' test
