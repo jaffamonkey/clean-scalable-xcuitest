@@ -17,4 +17,8 @@ before_script:
   - npm install -g ios-deploy
   
 script:
-  
+  - xcodebuild -workspace App.xcworkspace \
+           -scheme "SchemeName" \
+           -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' \
+           -derivedDataPath './output' \
+           test
