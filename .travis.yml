@@ -1,6 +1,6 @@
 sudo: required
 os: osx
-language: node_js
+language: objective-c
 node_js: '6'
 osx_image: xcode9.3
 env: DEVICE=11.2      
@@ -11,10 +11,10 @@ before_script:
 #   - brew cask install java
 #   - export JAVA_HOME=$(/usr/libexec/java_home)
 #   - brew prune
-  - brew install libimobiledevice
-  - brew install ideviceinstaller
-  - brew install ios-webkit-debug-proxy
-  - npm install -g ios-deploy
+#   - brew install libimobiledevice
+#   - brew install ideviceinstaller
+#   - brew install ios-webkit-debug-proxy
+#   - npm install -g ios-deploy
   
 script:
   - xcodebuild -list
